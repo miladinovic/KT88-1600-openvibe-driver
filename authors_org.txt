@@ -1,0 +1,30 @@
+@@ -0,0 1,28 @@
+KT88 support for OpenViBE
+
+Original authors and contributors
+
+Alexandra Elbakyan
+Graham Healy
+Emerson Machado
+
+Getting it to work in Linux:
+  Add vendor 0x9999 and product IDs 0x1016, 0x1018 to cp210x.c and recompile
+
+http://openvibe.inria.fr/forum/viewtopic.php?f=10&t=315
+
+Changed files, based on OpenViBE trunk 3009 and Emerson Machado's driver sketch as of March 2011:
+
+M openvibe-applications/acquisition-server/trunc/src/ovasCAcquisitionServerGUI.cpp
+  (added CDriverContecKT88 inclusion and instantiation)
+
+A openvibe-applications/acquisition-server/trunc/src/contec-kt881016/ovasCDriverContecKT88.cpp
+A openvibe-applications/acquisition-server/trunc/src/contec-kt881016/ovasCDriverContecKT88.h
+  (added, plus Linux support)
+
+A openvibe-applications/acquisition-server/trunc/src/contec-kt881016/ovasCConfigurationContecKT88.cpp
+A openvibe-applications/acquisition-server/trunc/src/contec-kt881016/ovasCConfigurationContecKT88.h
+A openvibe-applications/acquisition-server/trunc/share/openvibe-applications/acquisition-server/interface-Contec-KT88.ui
+  (added, plus Device selection as in OpenEEG-ModularEEG UI)
+C:\Users\BioingTS\Downloads\openvibe-0.11.0-svn3052-src\openvibe-applications\acquisition-server\trunc\share\openvibe-applications\acquisition-server
+
+
