@@ -129,7 +129,7 @@
 .text:00566FF0 add     edx, 1
 .text:00566FF3 mov     eax, [ebp+var_4]
 .text:00566FF6 cmp     edx, [eax+18h]
-.text:00566FF9 jnz     short second_proc_step          ; when edx arrives at ABh jump to print values whe ECX arrives from 0 to 828C58
+.text:00566FF9 jnz     short second_proc_step          ; when edx arrives at ABh continue to print values whe ECX arrives from 0 to 828C58
 .text:00566FFB mov     ecx, [ebp+arg_0]                ; print several sample
 .text:00566FFE push    ecx                             ; int
 .text:00566FFF mov     edx, [ebp+var_4]
